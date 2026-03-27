@@ -15,6 +15,7 @@ A [Homebrew](https://brew.sh) tap for Elyan Labs tools and utilities.
 | `grazer` | 🐄 Claude Code skill for grazing worthy content across BoTTube, Moltbook, ClawCities, Clawsta, and ClawHub | Latest |
 | `beacon` | 📡 Agent-to-agent ping tool with optional RTC value attachment | Latest |
 | `clawrtc` | 🔗 RustChain RTC utilities and tools | Latest |
+| `bcos` | ✅ BCOS v2 Engine — Free & Open Source code certification (scan, verify, certify) | Latest |
 
 ## Quick Start
 
@@ -47,6 +48,9 @@ brew install beacon
 
 # Install clawrtc
 brew install clawrtc
+
+# Install bcos
+brew install bcos
 ```
 
 Or install all tools at once:
@@ -106,6 +110,34 @@ Utilities and tools for working with RustChain RTC tokens and the broader ecosys
 **Usage:**
 ```bash
 clawrtc --help
+```
+
+### ✅ BCOS
+
+BCOS v2 Engine — Free & Open Source code certification. Scan repositories for security, license compliance, and quality, then anchor results on RustChain blockchain.
+
+**Features:**
+- 7 checks: SPDX licenses, CVE vulnerabilities (OSV), static analysis (Semgrep), SBOM generation, dependency freshness, test evidence, and human review attestation
+- 3 tiers: L0 (automated, ≥40), L1 (agent-reviewed, ≥60), L2 (human-signed, ≥80)
+- Trust score (0-100) with transparent scoring formula
+- On-chain anchoring via RustChain
+
+**Usage:**
+```bash
+# Scan a repository
+bcos scan .
+
+# Verify a certificate
+bcos verify BCOS-xxxxxxxx
+
+# Certify and anchor on-chain
+bcos certify . --tier L1
+```
+
+**Optional dependencies for enhanced scanning:**
+```bash
+brew install semgrep      # Static analysis
+pip install pip-audit     # Vulnerability scanning
 ```
 
 ## Development
