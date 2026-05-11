@@ -3,7 +3,7 @@
 [![BCOS Certified](https://img.shields.io/badge/BCOS-Certified-brightgreen?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik05IDE2LjE3TDQuODMgMTJsLTEuNDIgMS40MUw5IDE5IDIxIDdsLTEuNDEtMS40MXoiLz48L3N2Zz4=)](https://github.com/Scottcjn/Rustchain/blob/main/BCOS.md)
 
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 [![Homebrew](https://img.shields.io/badge/Homebrew-Tap-orange.svg)](https://brew.sh)
 
 A [Homebrew](https://brew.sh) tap for Elyan Labs tools and utilities.
@@ -195,7 +195,7 @@ To request a new formula be added to this tap:
 
 ## License
 
-This tap is available under the MIT License. See [LICENSE](LICENSE) for details.
+This tap is available under the MIT License.
 
 Individual formulae are subject to their respective tool licenses.
 
