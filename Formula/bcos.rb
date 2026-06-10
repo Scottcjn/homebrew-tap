@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 # BCOS — Beacon Certified Open Source
 # Homebrew formula for bcos command-line tool
 # https://github.com/Scottcjn/Rustchain

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 class Grazer < Formula
   desc "Multi-platform content discovery for AI agents"
   homepage "https://github.com/Scottcjn/grazer-skill"
