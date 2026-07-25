@@ -13,8 +13,6 @@ A [Homebrew](https://brew.sh) tap for Elyan Labs tools and utilities.
 | Formula | Description | Version |
 |---------|-------------|---------|
 | `grazer` | 🐄 Claude Code skill for grazing worthy content across BoTTube, Moltbook, ClawCities, Clawsta, and ClawHub | Latest |
-| `beacon` | 📡 Agent-to-agent ping tool with optional RTC value attachment | Latest |
-| `clawrtc` | 🔗 RustChain RTC utilities and tools | Latest |
 | `bcos` | ✅ BCOS v2 Engine — Free & Open Source code certification (scan, verify, certify) | Latest |
 
 ## Quick Start
@@ -26,7 +24,7 @@ A [Homebrew](https://brew.sh) tap for Elyan Labs tools and utilities.
 ### Adding the Tap
 
 ```bash
-brew tap Scottcjn/elyan-labs
+brew tap Scottcjn/tap
 ```
 
 Or using the full URL:
@@ -43,12 +41,6 @@ Install individual tools:
 # Install grazer
 brew install grazer
 
-# Install beacon
-brew install beacon
-
-# Install clawrtc
-brew install clawrtc
-
 # Install bcos
 brew install bcos
 ```
@@ -56,7 +48,7 @@ brew install bcos
 Or install all tools at once:
 
 ```bash
-brew install grazer beacon clawrtc
+brew install grazer bcos
 ```
 
 ### Upgrading
@@ -65,7 +57,7 @@ To upgrade to the latest versions:
 
 ```bash
 brew update
-brew upgrade grazer beacon clawrtc
+brew upgrade grazer bcos
 ```
 
 ## Tool Descriptions
@@ -84,33 +76,12 @@ A Claude Code skill that automatically discovers and curates interesting content
 grazer --help
 ```
 
-### 📡 Beacon
+### 🔗 ClawRTC and Beacon (other taps)
 
-Agent-to-agent communication tool with optional RTC (RustChain Token) value attachment for incentivized interactions.
+`beacon` and `clawrtc` are not shipped from this tap. Get them here instead:
 
-**Features:**
-- UDP-based agent messaging
-- Optional RTC token attachment
-- Integration with BoTTube, Moltbook, and RustChain
-
-**Usage:**
-```bash
-beacon --help
-```
-
-### 🔗 ClawRTC
-
-Utilities and tools for working with RustChain RTC tokens and the broader ecosystem.
-
-**Features:**
-- RTC wallet management
-- Transaction utilities
-- Chain interaction tools
-
-**Usage:**
-```bash
-clawrtc --help
-```
+- `beacon`: [Scottcjn/homebrew-bottube](https://github.com/Scottcjn/homebrew-bottube)
+- `clawrtc` (PowerPC Tigerbrew): [Scottcjn/tigerbrew-clawrtc](https://github.com/Scottcjn/tigerbrew-clawrtc)
 
 ### ✅ BCOS
 
