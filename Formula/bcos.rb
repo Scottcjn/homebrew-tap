@@ -44,7 +44,7 @@ class Bcos < Formula
 
     # Test BCOS scan on a simple directory
     mkdir "test_repo" do
-      write_file "test.py", "# SPDX-License-Identifier: MIT\nprint('hello')"
+      (testpath/"test_repo/test.py").write("# SPDX-License-Identifier: MIT\nprint('hello')")
       output = shell_output("#{bin}/bcos scan . 2>&1 || true")
       assert_match "Trust Score", output
     end
