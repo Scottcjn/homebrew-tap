@@ -36,16 +36,16 @@ class Bcos < Formula
 
   test do
     # Test that bcos command is available
-    assert_match "BCOS", shell_output("#{bin}/bcos --help 2>&1 || true")
+    assert_match "BCOS", shell_output("#{bin}/bcos --help 2>&1")
 
     # Test version output
     output = shell_output("#{bin}/clawrtc --version")
-    assert_match "1.8.0", output
+    assert_match version.to_s, output
 
     # Test BCOS scan on a simple directory
     mkdir "test_repo" do
       (testpath/"test_repo/test.py").write("# SPDX-License-Identifier: MIT\nprint('hello')")
-      output = shell_output("#{bin}/bcos scan . 2>&1 || true")
+      output = shell_output("#{bin}/bcos scan . 2>&1")
       assert_match "Trust Score", output
     end
   end
